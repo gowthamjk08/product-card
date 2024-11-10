@@ -1,0 +1,125 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Fraunces:opsz,wght@9..144,100..900&family=Inter:opsz@14..32&family=Montserrat&family=Outfit&family=Poppins&family=Young+Serif&display=swap');
+/* Root variables for color */
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.mobile{
+    display: none;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Cream);
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+section{
+    flex-basis: 300px;
+    background-color: var(--White);
+}
+.box1 img{
+    width: 100%;
+    height: 100%;
+}
+.box1{
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+.box2{
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+}
+/* text styling */
+h4{
+    font-weight: 400;
+    letter-spacing: .25em;
+    color: var(--Darkgrayishblue);
+}
+h1{
+     font-family: "Young Serif", serif;
+     margin: 10px 0;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 10px 0;
+    color: var(--Darkgrayishblue);
+}
+h2{    font-family: "Young Serif", serif;
+    color: var(--Darkcyan);
+    margin:20px 0 10px;
+    sup{
+        font-size:16px;
+        margin: 0 10px;
+        font-weight: normal;
+        color: var(--Darkgrayishblue);
+    }
+}
+.button{
+    background-color:var(--Darkcyan);
+    width: 90%;
+    padding:15px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    color: white;
+    display: flex;
+    justify-content:center;
+    font-weight: bold;
+    gap: 5px;
+}
+.button:hover{
+    background-color: rgb(1, 68, 31);
+    cursor: pointer;
+}
+@media screen and (max-width:650px) {
+    main{
+        width: 75%;
+        flex-wrap:wrap;
+        padding: 40px 0;
+    }
+    section{
+        flex-basis: 100%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .box1{
+        border-radius: 10px 10px 0 0;
+    }
+    .box2{
+        border-radius: 0 0 10px 10px;
+    }
+    h1,h3{
+        font-size: 28px;
+    }
+    h4{
+        font-size: 18px
+    }
+}
+@media screen and (max-width:450px) {
+    main{
+        width: 90%;
+    }
+}
