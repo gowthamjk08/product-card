@@ -94,7 +94,7 @@ h2{    font-family: "Young Serif", serif;
     main{
         width: 75%;
         flex-wrap:wrap;
-        padding: 40px 0;
+        padding: 20px 0;
     }
     section{
         flex-basis: 100%;
